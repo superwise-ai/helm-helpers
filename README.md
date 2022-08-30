@@ -1,5 +1,5 @@
 # helm-helpers
-
+[![License](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
 [![](https://github.com/superwise-ai/helm-helpers/workflows/Release%20Charts/badge.svg?branch=main)](https://github.com/superwise-ai/helm-helpers/actions)
 
 This repo contains Helm helper charts.
