@@ -1,0 +1,5 @@
+apiVersion: v2
+name: raw
+description: Allows to create Kubernetes resources from raw manifests
+version: 0.0.1
+appVersion: "0.0.1"

@@ -1,0 +1,62 @@
+## Common labels to add to all resources
+commonLabels: {}
+  # foo: bar
+
+## Append default chart labels to all resources
+appendChartLabels: false
+
+## Example value for templates
+exampleValue: test
+
+## Use a slice to provide a list of resources.
+## This method can be used to support values that were used with the deprecated raw chart.
+## Multiple values files are not supported.
+# resources:
+#   - apiVersion: scheduling.k8s.io/v1
+#     description: Used for system critical pods that must not be moved from their current node.
+#     kind: PriorityClass
+#     metadata:
+#       name: system-node-critical
+#     preemptionPolicy: PreemptLowerPriority
+#     value: 2000001000
+## Use a map to provide groups of lists of resources.
+## This method supports multiple values (groups should be unique accross all files to avoid overwriting values).
+# resources:
+#   namespaces:
+#     - apiVersion: v1
+#       kind: Namespace
+#       metadata:
+#         name: example
+#   configmaps:
+#     - apiVersion: v1
+#       kind: ConfigMap
+#       metadata:
+#         name: example
+
+## Use templates to generate manifests using Helm templates.
+## Slice or map can be used here, exactly like "resources".
+# templates:
+#   - |
+#     apiVersion: v1
+#     kind: Secret
+#     metadata:
+#       name: example-secret
+#     stringData:
+#       mykey: {{ .Values.exampleValue }}
+# templates:
+#   secrets:
+#     - |
+#       apiVersion: v1
+#       kind: Secret
+#       metadata:
+#         name: example-secret
+#       stringData:
+#         mykey: {{ .Values.exampleValue }}
+#   configmaps:
+#     - |
+#       apiVersion: v1
+#       kind: ConfigMap
+#       metadata:
+#         name: example-cm
+#       data:
+#         mykey: {{ .Values.exampleValue }}
