@@ -10,7 +10,7 @@ Adding custom labels to all resources is also supported using `commonLabels` and
 
 ## Installation
 ```sh
-helm repo add superwise-helpers https://superwise-ai/helm-helpers
+helm repo add superwise-helpers https://superwise-ai.github.io/helm-helpers
 helm repo update
 helm install superwise-helpers/raw -n example -f resources.yaml
 ```
