@@ -1,0 +1,6 @@
+# Helm chart automated files
+/charts/*/charts
+.idea
+**/*.tgz
+# MacOS
+**/.DS_Store
