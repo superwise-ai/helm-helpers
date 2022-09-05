@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  raw:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-09-05T08:26:44.376694667Z"
+    description: Allows to create Kubernetes resources from raw manifests
+    digest: e59df7fd050053a893ddd282b5e4543644f33561dcc3497d5f801aab909b4c35
+    name: raw
+    urls:
+    - https://github.com/superwise-ai/helm-helpers/releases/download/raw-0.0.1/raw-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-09-05T08:26:44.376700468Z"
