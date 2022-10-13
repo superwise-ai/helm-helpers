@@ -1,13 +1,15 @@
-## Common labels to add to all resources
-commonLabels: {}
+# -- Common labels to add to all resources
+commonLabels:
+  {}
   # foo: bar
 
-## Append default chart labels to all resources
+# -- Append default chart labels to all resources
 appendChartLabels: false
 
 ## Example value for templates
+# @ignored
 exampleValue: test
-
+#
 ## Use a slice to provide a list of resources.
 ## This method can be used to support values that were used with the deprecated raw chart.
 ## Multiple values files are not supported.
