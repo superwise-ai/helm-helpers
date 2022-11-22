@@ -18,7 +18,7 @@
 ```sh
 helm repo add helm-helpers https://superwise-ai.github.io/helm-helpers
 helm repo update
-helm install {{ template "chart.name" . }} helm-helpers/{{ template "chart.name" . }} -n {{ template "chart.name" . }} --createNamespace
+helm install {{ template "chart.name" . }} helm-helpers/{{ template "chart.name" . }} -n {{ template "chart.name" . }} --create-namespace
 ```
 {{ template "chart.requirementsSection" . }}
 

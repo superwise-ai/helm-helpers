@@ -9,7 +9,7 @@ Helm chart to deploy [k3s-io/helm-controller](https://github.com/k3s-io/helm-con
 ```sh
 helm repo add helm-helpers https://superwise-ai.github.io/helm-helpers
 helm repo update
-helm install helm-controller helm-helpers/helm-controller -n helm-controller --createNamespace
+helm install helm-controller helm-helpers/helm-controller -n helm-controller --create-namespace
 ```
 
 ## Values
